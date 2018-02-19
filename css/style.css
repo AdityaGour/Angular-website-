@@ -1,0 +1,47 @@
+#header{
+   padding-top: 84px;
+
+}
+.fixed-top{
+   background: rgba(49,96,152,0.6);
+}
+nav{
+    position:fixed !important;
+}
+.headerright{
+    width: 100%;
+    margin-left: 50%;
+}
+.headercolor{
+    color:#fff !important;
+    font-size: 18px;
+}
+#logo{   
+    width: 60px;
+}
+.nav-link.active{
+    background: rgba(0,0,0,0.7) !important;
+}
+.slide{
+display: block;
+}
+.nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #123050;
+}
+
+.productImage{
+    align-items: center;
+    padding-top: 2%;
+}
+.productImage img{
+    width:300px;
+}
+.cart{
+    padding-left:10% !important;
+}
+.footerheader{
+    background:rgb(57, 90, 135);
+    color: #fff;
+    text-align: center;
+}

@@ -1,0 +1,82 @@
+ <!DOCTYPE html>
+<html ng-app="demodynamic">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="node_modules/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-route/angular-route.js"></script>
+    <script src="Js/app.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="Controller/homeCtrl.js"></script>
+    <script src="Controller/aboutCtrl.js"></script>
+    <script src="Controller/contactCtrl.js"></script>
+    <script src="Controller/categoryCtrl.js"></script>
+    <script src="Controller/productCtrl.js"></script>
+    <script src="Controller/cartCtrl.js"></script>
+     <script src="Services/productlist.js"></script> 
+    <script src="Services/data.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+</head>
+<body>
+    <div class="container-fulid">
+        <nav  class="navbar navbar-expand-lg navbar-light fixed-top ">
+           
+               <a  href="#">
+                    <img src="css/images/logoe-Kart.png" class="navbar-brand" id="logo">
+               </a>
+       
+            <ul class="navbar-nav nav-pills headerright">
+                <li class="nav-item">
+                    <a href="#!/" class="nav-link active headercolor">
+                       Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#!/about" class="nav-link headercolor">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                        <a href="#!/about" class="nav-link dropdown-toggle headercolor" data-toggle="dropdown">Category</a>
+                        <div class="dropdown-menu">
+                            <a href="#!/category/Shoes" class="dropdown-item">Shoes</a>
+                            <a href="#!/category/Books" class="dropdown-item">Books</a>
+                            <a href="#!/category/Phone" class="dropdown-item">Phone</a>
+                            <a href="#!/category/Kitchen" class="dropdown-item">Kitchen</a>
+                        </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#!/contact" class="nav-link headercolor">Contact</a>
+                </li>
+                <li class="nav-item cart">
+                        <a href="#!/cart" class="nav-link headercolor " placeholder="add to cart"> <i class="fas fa-cart-plus" ></i> {{addlen}}</a>
+                </li>
+            </ul>
+            
+                    
+               
+        </nav> 
+         
+    </div> 
+        <ng-view>
+
+        </ng-view>
+
+
+ <div class="footer footerheader">
+     <div class="conatiner-fulid">
+         <div class="row">
+             <div class="col-xs-12">
+                <div  class="text-center author">copyright &copy; AdityaGour</div> 
+             </div>
+         </div>
+     </div>
+
+ </div>   
+  
+</body>
+</html>

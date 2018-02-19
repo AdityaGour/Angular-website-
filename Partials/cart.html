@@ -1,0 +1,29 @@
+<div class="container-fulid" id="header">
+
+<table class="table">
+    <thead class="thead-inverse">
+        <tr>
+            <th>S.no</th>
+            <th>Item Name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="item in cart.add">
+            <td>{{$index + 1}}</td>
+                <td>{{item.name}}</td>
+                <td><input type="number" ng-click="cart.quantity(item.qty)"ng-value="{{item.qty}}" ng-model="num" id="qty1"></td>
+                <td>{{item.price}}</td>
+                <td><button ng-click="cart.remove($index)">X</button></td>
+        </tr>
+        <tr >
+            <td></td>
+            <td><b>Grand Total</b></td>
+            <td><b>$</b><b ng-bind="cart.grandtotal()"></b></td>
+            <td>{{num}}</td>
+        </tr>
+    </tbody>
+   
+</table>
+</div>
